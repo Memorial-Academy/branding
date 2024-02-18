@@ -35,7 +35,7 @@
         </text>
         <text class="sealText" >
             <textPath xlink:href="#lowerCurve" startOffset="50%">
-                <tspan>of</tspan> SCIENCE <tspan>&</tspan> TECHNOLOGY
+                <tspan>of</tspan> SCIENCE <tspan>&amp;</tspan> TECHNOLOGY
             </textPath>
         </text>
     </g>
