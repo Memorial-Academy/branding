@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
     <style>
         text.sealText {
-            font-family: serif;
+            font-family: "Times New Roman", serif;
             font-size: 16px;
             letter-spacing: 3px;
             word-spacing: 6px;
@@ -43,19 +43,5 @@
     <!-- Sailboat -->
     <!-- Reference guides -->
     <!-- <path d="M128 24 l0 208 M24 128 l208 0" stroke="#2e2e2e" stroke-width="1" /> -->
-    <g id="sailboat" transform="scale(0.7) translate(55 45)">
-        <path d="M0 198 c50 51 206 51 256 0 c-20 6 -236 6 -256 0" stroke-width="1"/> <!-- Hull -->
-        <path d="
-            M68 202 l0 -152
-            M160 202 l0 -192
-        " stroke-width="3" /> <!-- Masts -->
-        <!-- Sails -->
-        <path d="M67 52 l-52 135 l52 0 Z" /> <!-- Rear sail -->
-        <path d="M160 12 l-82 175 l82 0 Z" /> <!-- Aft main sail -->
-        <path d="
-            M160 32 l90 168
-            M168 47 l75 141 l-75 -7 Z
-            m0 134 l-8 4.5
-        " stroke-width="1" /> <!-- Fore main sail -->
-    </g>
+    <image href="./logo.svg" cx="128" cy="128" transform="scale(0.7) translate(55 45)" />
 </svg>
