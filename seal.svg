@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+    <style>
+        text.sealText {
+            font-family: serif;
+            font-size: 16px;
+            letter-spacing: 3px;
+            word-spacing: 6px;
+            fill: white;
+            dominant-baseline: middle;
+            text-anchor: middle;
+        }
+        #text path {
+            stroke: none;
+            fill: none;
+            stroke-width: 6;
+        }
+        #sailboat path {
+            stroke: white;
+            fill: none;
+        }
+    </style>
+
+    <!-- Background -->
+    <circle cx="128" cy="128" r="116" stroke="#09305c" stroke-width="24" fill="#000411" />
+
+    <!-- Text -->
+    <g id="text">
+        <path id="upperCurve" d="M12 128 A116 116 0 1 1 244 128" />
+        <path id="lowerCurve" d="M12 128 A116 116 180 1 0 244 128" />
+
+        <text class="sealText" >
+            <textPath xlink:href="#upperCurve" startOffset="50%">
+                MEMORIAL ACADEMY <tspan>of</tspan>
+            </textPath>
+        </text>
+        <text class="sealText" >
+            <textPath xlink:href="#lowerCurve" startOffset="50%">
+                SCIENCE <tspan>and</tspan> TECHNOLOGY
+            </textPath>
+        </text>
+    </g>
+
+    <!-- Sailboat -->
+    <!-- Reference guides -->
+    <!-- <path d="M128 24 l0 208 M24 128 l208 0" stroke="#2e2e2e" stroke-width="1" /> -->
+    <g id="sailboat" transform="translate(0 5)">
+        <!-- Hull outline -->
+        <path d="M60 140 C80 240 176 240 196 140 Q146 140 128 137 M60 140 Q110 140 128 137" stroke-width="1" />
+        
+        <path d="
+            M191 160 Q147 160 128 157.3 M65 160 Q109 160 128 157.3
+            M181 180 Q149 180 128 177.7 M74 180 Q107 180 128 177.7
+            M166 200 Q151 200 128 198 M90 200 Q105 200 128 198
+        " stroke-width="0.5"/>
+        <path d="
+            M68 150 l0.5 0 M188 150 l0.5 0
+            M76 170 l0.5 0 M179 170 l0.5 0
+            M88.5 190 l0.5 0 M164.5 190 l0.5 0
+        " stroke-width="0.5" />
+
+        <path d="M128 137 l0 -110" stroke-width="3"/>
+        <path d="
+            M112 27 l32 0
+            M92 60 l72 0
+            M92 98 l72 0
+        " stroke-width="1" />
+    </g>
+</svg>
