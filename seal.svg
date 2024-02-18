@@ -16,7 +16,7 @@
         }
         #sailboat path {
             stroke: white;
-            fill: none;
+            fill: white;
         }
     </style>
 
@@ -30,12 +30,12 @@
 
         <text class="sealText" >
             <textPath xlink:href="#upperCurve" startOffset="50%">
-                MEMORIAL ACADEMY <tspan>of</tspan>
+                MEMORIAL ACADEMY
             </textPath>
         </text>
         <text class="sealText" >
             <textPath xlink:href="#lowerCurve" startOffset="50%">
-                SCIENCE <tspan>and</tspan> TECHNOLOGY
+                <tspan>of</tspan> SCIENCE <tspan>&</tspan> TECHNOLOGY
             </textPath>
         </text>
     </g>
@@ -43,26 +43,19 @@
     <!-- Sailboat -->
     <!-- Reference guides -->
     <!-- <path d="M128 24 l0 208 M24 128 l208 0" stroke="#2e2e2e" stroke-width="1" /> -->
-    <g id="sailboat" transform="translate(0 5)">
-        <!-- Hull outline -->
-        <path d="M60 140 C80 240 176 240 196 140 Q146 140 128 137 M60 140 Q110 140 128 137" stroke-width="1" />
-        
+    <g id="sailboat" transform="scale(0.72) translate(50 40)">
+        <path d="M0 198 c50 51 206 51 256 0 c-20 6 -236 6 -256 0" stroke-width="1"/> <!-- Hull -->
         <path d="
-            M191 160 Q147 160 128 157.3 M65 160 Q109 160 128 157.3
-            M181 180 Q149 180 128 177.7 M74 180 Q107 180 128 177.7
-            M166 200 Q151 200 128 198 M90 200 Q105 200 128 198
-        " stroke-width="0.5"/>
+            M68 202 l0 -152
+            M160 202 l0 -192
+        " stroke-width="3" /> <!-- Masts -->
+        <!-- Sails -->
+        <path d="M67 52 l-52 135 l52 0 Z" /> <!-- Rear sail -->
+        <path d="M160 12 l-82 175 l82 0 Z" /> <!-- Aft main sail -->
         <path d="
-            M68 150 l0.5 0 M188 150 l0.5 0
-            M76 170 l0.5 0 M179 170 l0.5 0
-            M88.5 190 l0.5 0 M164.5 190 l0.5 0
-        " stroke-width="0.5" />
-
-        <path d="M128 137 l0 -110" stroke-width="3"/>
-        <path d="
-            M112 27 l32 0
-            M92 60 l72 0
-            M92 98 l72 0
-        " stroke-width="1" />
+            M160 32 l90 168
+            M168 47 l75 141 l-75 -7 Z
+            m0 134 l-8 4.5
+        " stroke-width="1" /> <!-- Fore main sail -->
     </g>
 </svg>
