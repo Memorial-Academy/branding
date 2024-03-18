@@ -16,9 +16,11 @@
         }
         text {
             font-family: "Kode Mono", monospace;
+            font-weight: bold;
             fill:#ffffff;
             font-size:96px;
-            letter-spacing: 4px;
+            letter-spacing: 9px;
+            width: 256px;
         }
         tspan.bracket {
             fill: #6b6b6b;
@@ -50,5 +52,5 @@
     </g>
     <text x="270" y="120">
         <tspan class="bracket">&lt;</tspan>Let<tspan class="special">'</tspan>s</text>
-    <text x="270" y="232">&nbsp;Code<tspan class="bracket">/&gt;</tspan></text>
+    <text x="270" y="232"> Code<tspan class="bracket">/&gt;</tspan></text>
 </svg>
